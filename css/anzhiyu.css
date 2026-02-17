@@ -18,3 +18,15 @@
   position: relative; /* ����������z-index ������Ч */
   z-index: 3; /* ����Ϊ 3�������ֵ� 2 �ߣ����ܸ��ڱ����� */
 }
+
+/* �޸�ͷ���ı��� */
+.aside-content > .card-widget.card-info {
+    background: url('/img/abg.jpg') no-repeat center center !important;
+    background-size: cover !important;
+}
+
+/* ȥ��ͷ��󱳾�����Ч�� */
+#aside-content >.card-widget.card-info::before {
+background: transparent !important;
+animation: none !important;
+}
