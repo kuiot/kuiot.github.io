@@ -1,0 +1,30 @@
+/* source/css/custom.css */
+
+/* 1. ȷ�����ֲ㣨���������Ԫ�ظ��ţ��������� */
+#page-header::before {
+  /* ... ��������֮ǰд�����ִ��룬���ֲ��� ... */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  content: '';
+  z-index: 2; /* �����ڵ� 2 �� */
+  pointer-events: none;
+}
+
+/* 2. �� #site-info ���������ֲ�֮�� */
+#site-info {
+  position: relative; /* ����������z-index ������Ч */
+  z-index: 3; /* ����Ϊ 3�������ֵ� 2 �ߣ����ܸ��ڱ����� */
+}
+
+
+.aside-content > .card-widget.card-info {
+    background: url('/img/abg.jpg') no-repeat center center !important;
+    background-size: cover !important;
+}
+
+#aside-content >.card-widget.card-info::before {
+background: transparent !important;
+animation: none !important;
+}
